@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structured Semantic HTML Form</title>
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+        <p>Please fill in the form below with accurateinformation:</p>
+    </header>
+    <main>
+        <form action="#" method="post">
+
+            <!-- Personal Information Section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+                <label for="last-name">last-name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <label for="dob">Date of Birth:</label>
+                <input type="text"date id="dob" name="dob" required>
+                <label for="gender">Gender:</label>
+                <select id="gender"name="gender"required>
+                    <option value="">--select--</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+            <!-- Contact Information Section -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="email id">Email Address:</label>
+                <input type="email" id="email"name="email required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone"name="phone"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"placeholder="123-456-7890"required>
+        <label for="address">Address:</label>
+        <textarea id="address"name="address"rows="4"cols="50"placeholder="Enter your address here..."required></textarea>
+            </fieldset>
+
+            <!-- Account Information Section -->
+            <fieldset>
+                <legend>Account Information</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="6" required>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" minlength="6" required>
+            </fieldset>
+
+            <!-- Preferences Section -->
+             <fieldset>
+                <legend>Preferences</legend>
+                <p>How did you hear about us?</p>
+                <label><input type="radio"name="source"value="friends"required>Friends</label>
+                <label><input type="radio"name="source"value="social-media">Social Media</label>
+                <label><input type="radio"name="source"value="advertisement">Advertisement</label>
+                <label><input type="radio"name="source"value="other">Other</label>
+            <p>Select your interest</p>
+            <label><input type="checkbox"name="interest"value="technology">Technology</label>
+            <label><input type="checkbox"name="interest"value="sports">Sports</label>
+            <label><input type="checkbox"name="interest"value="music">Music</label>
+            <label><input type="checkbox"name="interest"value="travel">Travel</label>
+            <label><input type="checkbox"name="interest"value="reading">Reading</label>
+            </fieldset>
+
+            <!-- Submission Section -->
+             <fieldset>
+            <legend>Submit</legend>
+            <button type="submit">Submit Form</button>
+            <button type="reset">Reset Form</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>@ 2025 Structured Form Project</p>
+    </footer>
+</body>
+</html>
+            
